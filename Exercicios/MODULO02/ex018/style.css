@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right,green, black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    background-color: blue;
+}
+
+h1,h2,.p_fora{
+    color: white;
+    text-align: center;
+}
+
+div{
+    background-color: gray;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+div:hover{
+    background-color: black;
+    color: white;
+}
+
+.caixa1:hover{
+    background-color: red;
+    color: greenyellow;
+    
+}
+
+.caixa2:hover{
+    background-color: blue;
+    color: orange;
+}
+
+.caixa3:hover{
+    background-color: yellow;
+    color: purple;
+}
+
+div > ul{
+    text-align: left;
+    display: none;
+}
+
+div > p{
+    margin: 100px;
+}
+
+div:hover > ul{
+    display: block;
+}
+
+.caixa1,.caixa2{
+    margin-bottom: 30px;
+}
+
+div:hover > p{
+    display: none;
+}

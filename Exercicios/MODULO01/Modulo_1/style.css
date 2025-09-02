@@ -1,0 +1,61 @@
+body{
+    background-color: white;
+    color:black;
+}
+
+h1{
+    background-color: darkviolet;
+    color: azure;
+    text-align: center;
+    border: 3px solid black;
+    
+}
+
+div{
+    background-color: rgb(218, 161, 245);
+    border: 5px solid black;
+    padding: 10px;
+}
+
+audio{
+    background-color: blueviolet;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+video{
+    background-color:blueviolet;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+iframe{
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid black;
+}
+
+img{
+    background-color: blueviolet;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+h2{
+    text-align: center;
+    background-color: blueviolet;
+    border: 3px solid black;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+mark{
+    padding: 2px;
+    background-color: blueviolet;
+    color: white;
+}
