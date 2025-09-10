@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movimentando Caixas</title>
+    <style>
+        #container{
+            background-color: gray;
+            height: 1000px;
+            max-width: 700px;
+            margin: auto;
+            padding: 10px;
+        }
 
-    
+        .caixas{
+            position: relative;
+            border: 3px solid black;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .produto{
+            position: absolute;
+            background-color: blue;
+            height: 25%;
+            width: 25%;
+        }
+
+        #p2{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+        }
+
+        #p3{
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%,-100%);
+        }
+
+        #p4{
+            top: 30%;
+            left: 15%;
+        }
+    </style>
 </head>
 <body>
     <main id="container">
