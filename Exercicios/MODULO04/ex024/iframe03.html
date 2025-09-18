@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimentação no Iframe</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 90vw;
+            height: 300px;
+            border: 3px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Site com Movimentação nos Iframes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nobis provident ab voluptatem ratione magnam illum deleniti rem, minima alias ut quo pariatur odit eveniet illo non corporis in ea!</p>
+    <h2>Faça Sua escolha</h2>
+    <ul>
+        <li><a href="./paginas-extras/pag01.html" target="frame">Primeira Página</a></li>
+        <li><a href="./paginas-extras/pag02.html" target="frame">Segunda Página</a></li>
+        <li><a href="./paginas-extras/pag03.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae est ex assumenda itaque totam rerum veritatis dolore iusto vero quod nulla facilis, voluptatum illo maxime eligendi nostrum, suscipit, minus at?</p>
+
+    <iframe id="tela" name="frame" srcdoc = "<h1 style = 'font-family:Arial, Helvetica, sans-serif; color: blue;' >Escolha uma das Opções acima.</h1> <p>Escolha uma das opções acima para acessar o site neste iframe</p>" ></iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quasi, fuga possimus eligendi sint ea. Ducimus ad eveniet quod iste voluptate rem esse ab cum, illum eligendi soluta ipsa maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores aspernatur et, totam ea quas asperiores maxime eligendi, dolore fugiat excepturi eos quisquam modi accusantium, pariatur corrupti unde harum voluptate molestiae.</p>
+</body>
+</html>
