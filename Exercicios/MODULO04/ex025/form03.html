@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Decorado</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            height: 250px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        header h1{
+            padding-top: 50px;
+        }
+
+        header nav{
+            margin-top: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        header nav a{
+            color: white;
+            width: 120px;
+            border: 3px solid white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        header nav a:hover{
+            background-color: blue;
+            color: white;
+            text-decoration: underline;
+        }
+
+        main.container{
+            background-color: darkblue;
+            color: white;
+            min-height: 100vh;
+            width: 60vw;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.525);
+            border-radius: 30px;
+        }
+
+        main.container h1{
+            margin-bottom: 100px;
+        }
+
+        main.container p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main.container input{
+            width: 500px;
+            height: 50px;
+        }
+
+        input{
+            border-radius: 20px;
+            border: 3px solid gray;
+        }
+
+        input#ichecksen{
+            margin-bottom: 100px;
+        }
+
+        input::placeholder{
+            padding-left: 30px;
+        }
+
+        input.btn{
+            background-color: dodgerblue;
+            color: black;
+            margin-bottom: 20px;
+            border: 3px solid gray;
+            border-radius: 20px;
+        }
+
+        footer{
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario Desenvolvido</h1>
+        <nav>
+            <a href="#">Primeiro</a>
+            <a href="#">Segundo</a>
+            <a href="#">Terceiro</a>
+            <a href="#">Quarto</a>
+            <a href="#">Quinto</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Formularios 3</h1>
+        <form action="nada.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome: </label><br>
+                <input type="text" name="nome" id="inome" required autocomplete="name" maxlength="20" >
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome: </label><br>
+                <input type="text" name="sobrenome" id="isobrenome" required maxlength="30">
+            </p>
+            <p>
+                <label for="inasceu">Nascimento: </label><br>
+                <input type="date" name="nasceu" id="inasceu" required value="2002-02-02">
+            </p>
+            <p>
+                <label for="isen">Senha: </label><br>
+                <input type="password" name="sen" id="isen" required placeholder="Digite sua senha..." maxlength="16" minlength="8" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="ichecksen">Confirmar Senha: </label><br>
+                <input type="password" name="checksen" id="ichecksen" required placeholder="Confirme Sua Senha..." maxlength="16" minlength="8">
+            </p>
+            <input type="submit" value="Enviar Dados" class="btn">
+            <input type="reset" value="Limpar Dados" class="btn">
+        </form>
+    </main>
+    <footer>
+        <p>Site Desenvolvido por Um gostoso Chamado Christopher.</p>
+    </footer>
+</body>
+</html>
