@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    font-weight: bold;
+}
+
+header{
+    background-color: white;
+    color: black;
+}
+
+header h1{
+    text-align: center;
+}
+
+header nav{
+    display: none;
+}
+
+section{
+    background-color: white;
+}
+
+section::after{
+    content: "Este Documento Foi Impresso no site de Boka Lindu E Gostoso.";
+    font-weight: lighter;
+}
+
+footer{
+    display: none;
+}
+
