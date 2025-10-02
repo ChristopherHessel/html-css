@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        div.container{
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            height: 500px;
+            align-content: center;
+        }
+
+        div.itens{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1{
+            order: 1;
+            align-self: center;
+        }
+
+        div#i2{
+            order: 2;
+            align-self: center;
+        }
+
+        div#i3{
+            order: 0;
+            align-self: fstartlex-;
+        }
+
+        div#i4{
+            order: 3;
+            align-self: flex-start;
+        }
+
+        div#i5{
+            order: 4;
+            align-self: center;
+        }
+
+        div#i6{
+            order: 8;
+            align-self: flex-end;
+        }
+
+        div#i7{
+            order: 7;
+            align-self: center;
+        }
+
+        div#i8{
+            order: 9;
+            align-self: flex-start;
+        }
+
+        div#i9{
+            order: 10;
+            align-self: center;
+        }
+
+        div#i10{
+            order: 6;
+            align-self: flex-start;
+        }
+
+        div#i11{
+            order: 5;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="i1">H</div>
+        <div class="itens" id="i2">R</div>
+        <div class="itens" id="i3">C</div>
+        <div class="itens" id="i4">I</div>
+        <div class="itens" id="i5">S</div>
+        <div class="itens" id="i6">H</div>
+        <div class="itens" id="i7">P</div>
+        <div class="itens" id="i8">E</div>
+        <div class="itens" id="i9">R</div>
+        <div class="itens" id="i10">O</div>
+        <div class="itens" id="i11">T</div>
+    </div>
+</body>
+</html>
