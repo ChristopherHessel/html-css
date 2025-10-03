@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 570px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Menu FlexBox</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i class="material-icons" id="burguer" onclick="mostrarMenu()">menu</i>
+        <nav id="menu">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de FlexBox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corrupti quaerat, molestias, consequuntur qui sed quibusdam officia earum repellat culpa fugit aperiam odio quod, illum minima. Ipsum eos praesentium mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo non voluptatem animi quisquam quas deserunt nobis molestiae, id pariatur aut minus, ipsa ex fugiat cupiditate reiciendis? Eveniet, ipsa? Error, omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus eos provident deserunt possimus, velit enim ab maiores iste beatae. Totam excepturi praesentium numquam iusto ipsa nesciunt maiores sunt? Tempore!</p>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 571){
+                menu.style.display = 'flex'
+            }else{
+                menu.style.display = 'none'
+            }
+        }
+
+        function mostrarMenu(){
+            if(menu.style.display == 'flex'){
+                menu.style.display = 'none'
+            }else{
+                menu.style.display = 'flex'
+            }
+  
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    background-color: gray;
+    padding: 10px;
+    color: white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1{
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    margin-bottom: 10px;
+}
+
+header > nav{
+    /*border: 1px dotted black;*/
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > nav > a{
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#burguer{
+    display: none;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header > nav > a:hover{
+    background-color: darkgray;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: background-color .5s;
+}
+
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.337);
+}
+
+@media screen and (min-width:590px) and (max-width:785px){
+    header > nav{
+        width: 99vw;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    header > nav > a{
+        flex: 1 0 auto;
+    }
+}
