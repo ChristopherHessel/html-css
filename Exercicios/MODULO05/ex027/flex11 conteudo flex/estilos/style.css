@@ -15,8 +15,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
-    width: 100vw;
-    height: 100vh;
 }
 
 
@@ -81,6 +79,7 @@ div.text{
 div.media img, div.media iframe{
     margin: auto;
     width: 400px;
+    flex: 1 1 400px;
 }
 
 section.normal{
