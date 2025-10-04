@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 *{
-    margin: 0%;
     padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 }
 
@@ -11,87 +11,83 @@
 }
 
 body{
-    background-color: purple;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.7em;
+    background-color: darkmagenta;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    width: 100vw;
 }
 
-p{
-    margin-bottom: 20px;
-    text-align: justify;
-}
 
-h1,h2{
-    text-align: left;
-    margin-bottom: 30px;
-}
 
 header{
-    background-color: black;
+    background-color: darkslateblue;
     background-image: url(../imagens/cabeçalho-img.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px;
-    height: 150px;
-    width: 100vw;
     color: white;
-    margin-bottom: 20px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.322);
+    padding: 20px;
 }
 
+p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
 
+h1, h2{
+    margin-bottom: 20px;
+    text-align: left;
+}
 
 section.flex-content{
-    padding: 20px;
-    background-color: rgb(16, 7, 44);
+    background-color: rgb(16, 9, 57);
     color: white;
-    width: 100vw;
+    padding: 20px;
+    margin-top: 20px;
 
     display: flex;
     flex-flow: column wrap;
-}
-
-section.normal{
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgb(16, 7, 44);
-    color: white;
-    width: 100vw;
-}
-
-article.text-media{
-
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
 }
 
+
 article.media-text{
+    border: 1px solid red;
 
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-between;
 }
 
-article > div.text{
-    flex: 1 1 500px;
-}
+article.text-media{
+    border: 1px solid yellow;
 
-article > div.media{
-    flex: 1 0 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 div.media{
-    padding: 0%;
+    border: 1px solid orange;
+    flex: 1 1 400px;
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-div.media img{
-    width: 300px;
+div.text{
+    border: 1px solid violet;
+    padding: 10px;
+    flex: 1 1 500px;
 }
 
+div.media img, div.media iframe{
+    margin: auto;
+    width: 400px;
+}
 
+section.normal{
+    margin-top: 20px;
+    background-color: rgb(16, 9, 57);
+    color: white;
+}
