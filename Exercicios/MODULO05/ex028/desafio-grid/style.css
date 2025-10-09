@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    border: 3px solid black;
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    gap: 10px;
+    grid-template: 100px 50px 1fr 50px / 1fr 2fr 1fr;
+}
+
+.itens{
+    border: 2px solid black;
+}
+
+#cabecalho{
+    background-color: red;
+    grid-area: 1 / -4 / 2 / -1;
+}
+
+#menu{
+    background-color: yellow;
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+#principal{
+    background-color: darkviolet;
+    grid-area: 3 / 1 / 4 / -2;
+}
+
+#secundario{
+    background-color: blue;
+    grid-area: 3 / 3 / 4 / -1;
+}
+
+#rodape{
+    background-color: orange;
+    grid-area: 4 / 1 / 5 / -1;
+}

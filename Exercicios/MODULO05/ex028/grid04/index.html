@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        div.container{
+            border: 1px solid black;
+
+            display: grid;
+            grid-template: repeat(3,100px)/repeat(4,1fr);
+        }
+
+        div.itens{
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+        }
+
+        #caixaA{
+            background-color: red;
+            grid-area: 1 / 1 / 2 / 5;
+        }
+
+        #caixaB{
+            background-color: green;
+            grid-area: 2 / 1 / -1 / -3;
+        }
+
+        #caixaC{
+            background-color: blue;
+            grid-area: -3 / -3 / span 2 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="caixaA">A</div>
+        <div class="itens" id="caixaB">B</div>
+        <div class="itens" id="caixaC">C</div>
+    </div>
+</body>
+</html>
